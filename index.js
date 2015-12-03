@@ -1,3 +1,4 @@
+(function(math){
 'use strict';
 
 var parser = math.parser();
@@ -33,3 +34,4 @@ var ractive = Ractive({
     }
   }
 });
+})(math);
