@@ -1,0 +1,5 @@
+<ul class='calculation-overlay'>
+    {{#each lines}}
+    <li><span class='invisible'>{{originalLines[@index]}}</span>{{#if .}}<small>{{.}}</small>{{/if}}</li>
+    {{/each}}
+</ul>

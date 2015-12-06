@@ -1,0 +1,15 @@
+<script type="text/html" id="BackgroundRuler"><ul class='background-ruler'>
+    {{#each lines}}<li>&nbsp;</li>{{/each}}
+</ul></script>
+
+<script type="text/html" id="CalculationOverlay"><ul class='calculation-overlay'>
+    {{#each lines}}
+    <li><span class='invisible'>{{originalLines[@index]}}</span>{{#if .}}<small>{{.}}</small>{{/if}}</li>
+    {{/each}}
+</ul></script>
+
+<script type="text/html" id="home"><BackgroundRuler value='{{value}}' />
+<CalculationOverlay value='{{value}}' />
+<Notepad value='{{value}}' /></script>
+
+<script type="text/html" id="Notepad"><textarea class='notepad' value='{{value}}'></textarea></script>

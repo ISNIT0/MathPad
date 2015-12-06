@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.background-ruler {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  list-style-type: none;
+}
+.background-ruler li {
+  line-height: 21px;
+  border-bottom: 1px solid #cce;
+  margin: 0;
+  padding: 0;
+}
+
+.calculation-overlay {
+  box-sizing: border-box;
+  position: absolute;
+  width: auto;
+  background-color: none;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  list-style-type: none;
+}
+.calculation-overlay li {
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.calculation-overlay li .invisible {
+  opacity: 0;
+  margin-right: 30px;
+  font-size: 16px;
+}
+.calculation-overlay li small {
+  background: #eee;
+  padding: 0px 5px;
+}
+
+.notepad {
+  z-index: auto;
+  position: absolute;
+  line-height: 22px;
+  font-size: 16px;
+  transition: none;
+  overflow: auto;
+  background: transparent !important;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
